@@ -35,12 +35,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Data artefacts (raw downloads & generated binary parquet/geoparquet files)
+# Raw source data (large 199MB GeoJSON download — keep excluded)
 data/raw/*
 !data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-*.parquet
-*.geoparquet
+
+# Ephemeral databases
 *.duckdb
 *.duckdb.wal
