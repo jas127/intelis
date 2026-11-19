@@ -1,0 +1,23 @@
+[project]
+name = "intelis-pipelines"
+version = "0.1.0"
+description = "Data ingestion, transformation, and validation pipelines for Intelis"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.1.0",
+    "pandas>=2.2.0",
+    "pyarrow>=17.0.0",
+    "geopandas>=1.0.0",
+    "shapely>=2.0.0",
+    "pyproj>=3.6.0",
+    "h3>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

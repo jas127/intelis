@@ -1,0 +1,65 @@
+{
+  "dataset_id": "hyderabad_h3_res8_intelligence",
+  "city": "Hyderabad (GHMC Historical Reference Boundary)",
+  "h3_resolution": 8,
+  "projected_crs": "EPSG:32644",
+  "min_reliable_area_km2": 0.15,
+  "high_confidence_threshold": 0.7,
+  "processed_at_utc": "2026-11-19T06:49:08.443094+00:00",
+  "boundary_reference": {
+    "path": "data/raw/boundaries/ghmc-area.geojson",
+    "osm_id": "relation/7868535",
+    "osm_timestamp": "2018-01-03T13:15:26Z",
+    "name": "Greater Hyderabad Municipal Corporation",
+    "vintage_warning": "Historical OpenStreetMap administrative boundary from January 2018; not a verified current official GHMC boundary.",
+    "geometry_initially_valid": true,
+    "validity_note": "Valid Geometry",
+    "area_km2": 609.483,
+    "bounds": {
+      "min_longitude": 78.238707,
+      "min_latitude": 17.291638,
+      "max_longitude": 78.622391,
+      "max_latitude": 17.560832
+    },
+    "sha256": "5707fa98af0e3f6807c5494ed1ab5f343bf979c4b32f13f9f8a815b6767cfff8"
+  },
+  "reconciliation": {
+    "total_overture_input": 159323,
+    "spatially_unevaluable": 0,
+    "in_ghmc_boundary_total": 136649,
+    "outside_ghmc_boundary_total": 22674,
+    "in_ghmc_boundary_cafes": 1082,
+    "outside_ghmc_boundary_cafes": 155,
+    "in_ghmc_boundary_food": 10567,
+    "outside_ghmc_boundary_food": 1530,
+    "in_ghmc_boundary_restaurants": 5912,
+    "unmatched_in_boundary_records": 0
+  },
+  "h3_summary": {
+    "total_intersecting_cells": 975,
+    "reliable_area_cells": 878,
+    "low_area_flagged_cells": 97,
+    "cells_with_cafes": 359,
+    "cells_with_food_businesses": 685,
+    "max_cafes_in_cell": 19,
+    "max_reliable_cafe_density_per_km2": 25.23
+  },
+  "outputs": {
+    "cells_geojson": {
+      "path": "data/processed/hyderabad_h3_cells.geojson",
+      "size_bytes": 1003601
+    },
+    "metrics_parquet": {
+      "path": "data/processed/hyderabad_h3_metrics.parquet",
+      "size_bytes": 75743
+    },
+    "pois_parquet": {
+      "path": "data/processed/hyderabad_h3_pois.parquet",
+      "size_bytes": 917728
+    },
+    "quality_report_csv": {
+      "path": "data/processed/hyderabad_h3_quality_report.csv",
+      "size_bytes": 90631
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-canvas: #faf8f4;
+  --bg-surface: #f3efe8;
+  --bg-elevated: #ffffff;
+  --border-subtle: #e6e0d6;
+
+  --text-primary: #181a1f;
+  --text-secondary: #555b66;
+  --text-muted: #848b96;
+
+  --accent-cobalt: #1e4fd8;
+  --accent-cobalt-soft: #e9effd;
+  --accent-coral: #eb5e47;
+  --accent-coral-soft: #fdece9;
+  --accent-orange: #f28c28;
+  --accent-orange-soft: #fef2e6;
+  --accent-lavender: #7e6df2;
+  --accent-lavender-soft: #f0eeff;
+  --accent-green: #1b9a6b;
+  --accent-green-soft: #e7f6f0;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle MapLibre control overrides to match Intelis warm-light theme */
+.maplibregl-ctrl-group {
+  background: var(--bg-elevated) !important;
+  border: 1px solid var(--border-subtle) !important;
+  box-shadow: 0 2px 8px rgba(24, 26, 31, 0.06) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.maplibregl-ctrl-group button {
+  color: var(--text-primary) !important;
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgba(250, 248, 244, 0.85) !important;
+  color: var(--text-secondary) !important;
+  font-size: 11px !important;
+}
